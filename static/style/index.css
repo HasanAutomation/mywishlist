@@ -1,0 +1,55 @@
+h3{
+    text-align: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(24, 172, 172);
+    z-index: -1;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+@media(max-width:1000px)
+{
+    body{
+        background-color:yellow;
+    }
+    #btnAdd
+    {
+        background-color: red;
+    }
+}
+
+#item{
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+}
+#btnAdd{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.colItem{
+font-weight: bold;
+}
+
+#head{
+    font-size: larger;
+}
